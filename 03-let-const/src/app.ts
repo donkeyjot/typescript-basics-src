@@ -1,15 +1,14 @@
-let pizza = {
-  name: 'Pepperoni',
-  price: 25,
-};
+const pizzas = [
+  {name:'Pepperoni', toppings: ['pepperoni']}
+];
 
-if (true) {
-  let pizza = 25;
+const mappedPizzaz = pizzas.map((pizza) => pizza.name.toUpperCase());
+
+  console.log(mappedPizzaz);
+
+function multiply(a, b) {
+  return a*b
 }
 
-// const pizza: any = {
-//   name: 'Pepperoni',
-//   price: 25,
-// };
-
-// pizza.toppings = ['pepperoni'];
+console.log(multiply(5,6));
+console.log(multiply(3,7));
